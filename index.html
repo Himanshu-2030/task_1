@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =====================
+        header section
+    ==================== -->
+    <header>
+        <!-- <div class="logo"><img src="./images/project/whole.png" class="img-logo"></div> -->
+        <img src="./images/project/whole.png" class="img-logo">
+        <div class="form-div"><form action="google.com" class="form">
+            <img src="./images/project/Group 28 search.png" alt="" class="search-icon">
+            <input type="text" name="search" id="search" placeholder="search for your favourite groups in ATG">
+        </form></div>
+        <div class="make-acc">
+            <p>Create Account</p>
+            <select name="select" id="select">
+                <option value="0">It's free!</option>
+            </select>
+    </header>
+     <!-- =====================
+        home section
+    ==================== -->
+    <!-- pic section  -->
+    <div class="main-img">
+        <div> <p> Computer Engineering</p>
+            <small>142,765 Computer Engineers follow this</small>
+        </div>     
+    </div>
+    <!-- tab section  -->
+    <div class="tab">
+        <div class="section">
+            <ul class="ul-lists">
+                <li><a href="#" onclick="showAllPosts()">All Posts(32)</a></li>
+                <li><a href="#" onclick="showCategory('Article')">Article</a></li>
+                <li><a href="#" onclick="showCategory('Event')">Event</a></li>
+                <li><a href="#" onclick="showCategory('Education')">Education</a></li>
+                <li><a href="#" onclick="showCategory('Job')">Job</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <select name="select-btn" id="select-btn" class="btn-group p-btn">
+                <option value="Write a Post">Write a Post</option>
+            </select>
+            <button class="j-btn"><img src="./images/project/Vector join vector.png">Join Group</button>
+        </div>
+    </div>
+    
+
+    <!-- page section  -->
+    <section class="page-container">
+        <section class="page-container">
+            <div id="post-container">
+                <div class="post" data-category="Article">
+                    <div class="post-header">
+                        <img src="./images/Rectangle 5 1 post.png" alt="Post Image">
+                       
+                    </div>
+                    <div class="pad">
+                        <div class="type">Article</div>
+                        <div class="post-content">
+                            <p>What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                            <div class="dropdown">
+                                <button class="more-button" onclick="toggleDropdown(this)">...</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Edit</a>
+                                    <a href="#">Report</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-description">
+                            <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                        </div>
+                        <div class="post-author">
+                            <div class="author-info">
+                                <img src="./images/Rectangle 3 1 profile.png" alt="Profile Picture">
+                                <p class="author-name">John Doe</p>
+                            </div>
+                            <div class="post-actions">
+                                <span class="post-views">1,234 views</span>
+                                <img src="./images/project/Group 2 share icon.png" alt="" srcset="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Post -->
+                <div class="post" data-category="Job">
+                    <div class="post-header">
+                        <img src="./images/Rectangle 5 2 post.png" alt="Job Image">
+                        
+                    </div>
+                    <div class="pad">
+                        <div class="type">Job</div>
+                        <div class="post-content">
+                            <p>Tax Benefits for Investment under National Pension Scheme launched by Government</p>
+                            <div class="dropdown">
+                                <button class="more-button" onclick="toggleDropdown(this)">...</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Edit</a>
+                                    <a href="#">Report</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-description">
+                            <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                        </div>
+                        <div class="post-author">
+                            <div class="author-info">
+                                <img src="./images/Rectangle 3 (2).png" alt="Profile Picture">
+                                <p class="author-name">Jane Smith</p>
+                            </div>
+                            <div class="post-actions">
+                                <span class="post-views">789 views</span>
+                                   <img src="./images/project/Group 2 share icon.png" alt="" srcset="">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Third Post (Similar to Second Post) -->
+                <div class="post" data-category="Job">
+                    <div class="post-header">
+                        <img src="./images/Rectangle 5 3 post.png" alt="Job Image">
+                    </div>
+                    <div class="pad">
+                        <div class="type">Job</div>
+                        <div class="post-content">
+                            <p>Finance & Investment Elite Social Mixer @Lujiazui</p>
+                            <div class="dropdown">
+                                <button class="more-button" onclick="toggleDropdown(this)">...</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Edit</a>
+                                    <a href="#">Report</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-author">
+                            <div class="author-info">
+                                <img src="./images/Rectangle 3 (3).png" alt="Profile Picture">
+                                <p class="author-name">Jane Smith</p>
+                            </div>
+                            <div class="post-actions">
+                                <span class="post-views">789 views</span>
+                                <img src="./images/project/Group 2 share icon.png" alt="" srcset="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <div class="location-section">
+            <div class="location-info">
+                <div class="location-info">
+                    <img src="./images/project/outline-location_on-24px 2 map icon.png" alt="" srcset="">
+                    <span class="location-name">Noida</span>
+                </div>
+                <img src="./images/project/baseline-edit-24px edit icon.png" alt="" srcset="">            
+        </div>
+            <div class="disclaimer">
+                <p>Your location will help us in providing better services.</p>
+            </div>
+        </div>
+    </section>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    --white:#f8f9fd;
+    --a-white:#f2f3f5;
+    --a-grey:#cfd4da;
+    --b-grey:#e8ecee;
+    --c-grey:#868f96;
+    --a-black:#495058;
+    --b-black:#353a40;
+    --black:#212429;
+
+    /* pallete  */
+    --dark-blue:#485dc6;
+    --mid-blue:#349aef;
+
+
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1% 4%;
+    height: 72px;
+     box-shadow: 0px 1px 2px 0px #0000001F;
+   
+}
+.img-logo{
+    width:162.57px;
+    height:24px;
+    left:72px;
+    top:24px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    gap:1rem;
+    width: 360px;
+    height: 42px;
+    top: 16px;
+    left: 540px;
+    border-radius: 21px;
+
+}
+.search-icon{
+    width: 22px;
+    height: 22px;
+    top: 26px;
+    left: 554px;
+}
+#search{
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-transform: capitalize;
+    color: var(--p-grey);
+    width: 242px;
+    height: 19px;
+    top: 28px;
+    left: 590px;
+
+}
+.make-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.make-acc p{
+    height: 21px;
+    top: 27px;
+    left: 1161px;
+    color:#2E2E2E;
+
+}
+.make-acc select{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #2F6CE5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+
+/* main section  */
+.main-img{
+    display: flex;
+    align-items: end;
+    width: 1440px;
+height: 440px;
+top: 72px;
+
+}
+.main-img div{
+    padding: 0 0 2% 5%;
+}
+.main-img div p{
+font-size: 36px;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+color:#FFFFFF;
+
+}
+.main-img div small{
+font-size: 18px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+color: #fff;
+}
+.main-img::before{
+    content: '';
+    width: 100%;
+    height: 440px;
+    top: 72px;
+    position: absolute;
+    background: url('./images/project/Rectangle\ 2.png');
+    z-index: -1;
+    opacity: .9;
+}
+/* Reset some default styles for better layout control */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* tab section */
+.tab {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--a-grey);
+    margin: 2% 6%;
+    align-items: center;
+}
+
+/* Style the section containing the list */
+/* Style the section containing the list */
+.section .ul-lists {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* Change this line */
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.section .ul-lists li {
+    margin-right: 20px; /* Add margin between list items */
+    font-size: 14px; /* Adjust font size */
+}
+
+.section .ul-lists li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+.section .ul-lists li a {
+    text-decoration: none;
+    color: var(--a-black);
+    font-weight: 600;
+    border-radius: 4px; /* Optional: Add rounded corners to the list items */
+}
+
+.section .ul-lists li a:hover {
+    color: black;
+}
+
+
+/* Style the button container */
+.btn {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+
+/* Style the select button */
+.btn-group {
+    padding: 2%;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #EDEEF0;
+}
+
+/* Style the "Join Group" button */
+.j-btn {
+    padding: 5px 12px; /* Adjust padding as needed */
+    background-color: #2F6CE5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    border: none;
+    border-radius: 2px;
+    text-wrap: nowrap;
+}
+
+.j-btn img {
+    display: block;
+}
+
+/* page section  */
+.page-container{
+    display: flex;
+    margin: 2% 6%;
+}
+div#post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.post {
+    border: 1px solid #E0E0E0;
+    margin: bottom 10px;;
+}
+
+.post-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-content p {
+    margin: 10px 0;
+    font-weight: 600;
+    line-height: 29.52px;
+}
+.pad {
+    padding: 1px 20px 13px;
+}
+
+.post-actions button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.type{
+    font-weight: 500;
+    line-height: 23.6px;
+}
+.post-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.post-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post-author img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m
+
+.author-name {
+    font-weight: bold;
+}
+
+.post-views {
+    color: #777;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* side location section  */
+
+
+/* Style the location section container */
+.location-section {
+    background-color: #f0f0f0;
+    padding: 20px 20px 0px 150px;
+}
+
+/* Style the location info section */
+.location-info {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+/* Style the location icon */
+.location-info i.fa-map-marker-alt {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007BFF; /* Change the color as needed */
+}
+
+/* Style the location name */
+.location-info .location-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Style the edit icon */
+.location-info i.edit-icon {
+    font-size: 18px;
+    color: #007BFF; /* Change the color as needed */
+    cursor: pointer;
+}
+
+/* Style the disclaimer */
+.disclaimer {
+    margin-top: 20px;
+}
+
+/* Style the disclaimer text */
+.disclaimer p {
+    font-size: 14px;
+    color: #777; /* Change the color as needed */
+}
